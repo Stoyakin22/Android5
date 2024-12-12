@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFDFD"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftyDP"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/fourteenthDP"
+            android:layout_height="@dimen/fourteenthDP"
+            android:layout_marginStart="@dimen/tenDP"
+            android:layout_marginTop="@dimen/tenDP"
+            android:backgroundTint="@color/white"
+            android:src="?attr/homeAsUpIndicator"
+            android:visibility="visible"
+            app:tint="@color/black" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ys_display_regular"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationX="@dimen/sixteenDP"
+            android:translationY="15dp"
+            tools:ignore="VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:paddingEnd="18dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/blackThemeView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/sixteenDP"
+            android:layout_weight="1"
+            android:fontFamily="@font/ys_display_regular"
+            android:text="@string/black_theme"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/themeSwitch"
+            android:layout_width="56dp"
+            android:layout_height="@dimen/fortyEightDP"
+            android:layout_gravity="center"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/shareView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/sixteenDP"
+            android:layout_weight="1"
+            android:fontFamily="@font/ys_display_regular"
+            android:text="@string/share_application"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/share"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="@dimen/fortyEightDP"
+            android:layout_height="@dimen/fortyEightDP"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:visibility="visible"
+            app:icon="@drawable/share"
+            app:iconGravity="end"
+            app:iconTint="@color/black"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/supportView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/sixteenDP"
+            android:layout_weight="1"
+            android:fontFamily="@font/ys_display_regular"
+            android:text="@string/support"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/sendToSupport"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="@dimen/fortyEightDP"
+            android:layout_height="@dimen/fortyEightDP"
+            android:layout_gravity="center"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/support"
+            app:iconGravity="end"
+            app:iconTint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/userAgreementView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/sixteenDP"
+            android:layout_weight="1"
+            android:fontFamily="@font/ys_display_regular"
+            android:text="@string/agreement"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/viewUserAgreement"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="@dimen/fortyEightDP"
+            android:layout_height="@dimen/fortyEightDP"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:backgroundTint="#FFFFFF"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/license"
+            app:iconGravity="end"
+            app:iconTint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+</LinearLayout>

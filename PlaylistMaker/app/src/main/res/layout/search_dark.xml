@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1B22"
+    android:backgroundTint="#1A1B22"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourteenthDP"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/fourteenthDP"
+            android:layout_height="@dimen/fourteenthDP"
+            android:layout_marginStart="@dimen/tenDP"
+            android:layout_marginTop="@dimen/tenDP"
+            android:src="?attr/homeAsUpIndicator"
+            android:visibility="visible"
+            android:backgroundTint="#1A1B22"
+            app:tint="@color/white" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fourteenthDP"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/twentyDP"
+            android:gravity="center_vertical"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:translationX="0dp"
+            android:translationY="@dimen/tenDP"
+            tools:ignore="VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourteenthDP"
+        android:orientation="horizontal"
+        android:background="@drawable/search_bar_background"
+        android:padding="@dimen/tenDP"
+        android:layout_marginTop="@dimen/tenDP"
+        android:layout_marginStart="@dimen/twentyDP"
+        android:layout_marginEnd="@dimen/twentyDP"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:tint="@color/black"
+            android:layout_marginEnd="8dp"
+            tools:ignore="UseAppTint" />
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/search"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:padding="0dp"
+            android:textColor="#000000"
+            android:textColorHint="#BBBBBB"/>
+
+        <ImageButton
+            android:id="@+id/clearButton"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="@color/black"
+            android:visibility="invisible"
+            tools:ignore="UseAppTint" />
+    </LinearLayout>
+
+</LinearLayout>
